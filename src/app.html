@@ -1,4 +1,7 @@
 <template>
+	<c-hello-for-each>
+		<lightning-icon icon-name="utility:edit" size="x-small" slot="icon"></lightning-icon>
+	</c-hello-for-each>
 	<c-hello-expressions></c-hello-expressions>
 
 	<div class="app slds-p-around_x-large">
@@ -15,7 +18,7 @@
 					<c-child label={feature.label} key={feature.label}>
 
 						<!-- Specifying the 'icon' slot for c-child -->
-						<lightning-icon icon-name={feature.icon} size="x-small" slot="icon"></lightning-icon>
+						<lightning-icon icon-name={feature.icon} size="x-small" slot="icon">icon</lightning-icon>
 					</c-child>
 				</template>
 			</div>
